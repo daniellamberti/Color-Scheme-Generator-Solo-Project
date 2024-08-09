@@ -1,0 +1,219 @@
+      /* ===========   Universal reset to remove default margin and padding, and set box-sizing  ======= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                    /* ============  Semantic and headings tags styling  ======= */
+
+body {
+    font-family: "Inter", sans-serif;
+    background: rgb(70, 67, 67);
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5em;
+    background: rgb(230, 224, 224);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+header {
+    display: flex;
+}
+
+section {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin: 0.5em 0;
+    color: white;
+    font-weight: bold;
+}
+
+section, footer {
+    display: grid;
+}
+
+.get-scheme-btn, #reset-btn {
+    padding: 0.75em 0.4em;
+    border-radius: 6px;
+    background: rgb(185, 180, 180);
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.get-scheme-btn:hover, #reset-btn:hover {
+    background: white;
+}
+
+                        /* ============  Main container styling  ======= */
+
+#container {
+    display: block;
+    width: 50vw;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 0.4em;
+    border-radius: 8px;
+    background: rgb(122, 113, 113);
+}
+
+                    /* ============  Input, select and option  styling  ======= */
+
+input {
+    padding: 0.625em;
+}
+
+select {
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0.7em 0.3em;
+    margin: 0.625em;
+    width: 40%;
+    border-radius: 6px;
+    border: none;
+    background: rgb(185, 180, 180);
+}
+
+select option {
+    padding: 3.12em;
+    margin: 1.25em 0;
+}
+
+
+select:hover {
+    background: white;
+}
+
+                       /* ============ Styling for Classes and IDs ============ */
+
+.colors {
+    height: 460px;
+}
+
+#color1 {
+    border-bottom-left-radius: 8px;
+}
+
+#color5 {
+    border-bottom-right-radius: 8px;
+}
+
+input[type="color"] {
+    width: 3.75em;
+    height: 2.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    background: #FFF;
+}
+
+                     /* ================== @media SETTINGS ======================  */
+
+@media (max-width: 928px) {
+    #container {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 786px) {
+
+    #container {
+        width: 70%;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 648px) {
+
+    #container {
+        width: 75%;
+    }
+
+    select {
+        font-size: 0.9rem;
+        padding: 0.7em 0.2em; 
+    }
+
+    .get-scheme-btn, #reset-btn {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 546px) {
+
+    #container {
+        width: 80%;
+    }
+
+    header {
+        justify-content: center;
+        gap: 0.15em;
+    }
+
+    footer {
+        font-size: 0.78rem;
+    }
+
+    input[type="color"] {
+        width: 3.2em;
+        height: 2.2em;
+    }
+
+    select {
+        font-size: 0.8rem;
+        padding: 0.53em 0.1em;
+        margin: 0.5em;
+    }
+
+    .get-scheme-btn, #reset-btn {
+        padding: 0.6em 0.3em;
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 462px) {
+
+    #container {
+        width: 90%;
+    }
+
+    header {
+        gap: 0.3em;
+    }
+
+    select {
+        font-size: 0.68rem;
+        width: 35%;
+    }
+
+    .get-scheme-btn, #reset-btn {
+        font-size: 0.7rem;
+        padding: 0.5em 0.4em;
+    }
+
+    footer {
+        font-size: 0.68rem;
+    }
+}

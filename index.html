@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <!-- ======================   HEAD SECTION ===============================-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+        <!-- ======================   BODY SECTION ===============================-->
+
+<body>
+    <div id="container">          <!-- Wrap Container -->
+
+        <!-- ======================  HEADER SECTION  =========================== -->
+
+        <header>
+            <h1 aria-label="Color Scheme Generator"></h1>
+            <input type="color" id="color-selector" value="#000000">
+            <select id="scheme-selector">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button id="generate-scheme-btn" class="get-scheme-btn">Get color scheme</button>
+            <button id="reset-btn" class="reset-btn">Reset</button>
+        </header>
+
+        <!-- ======================   MAIN SECTION =============================== -->
+        <main>
+            <section>
+                <div id="color1" class="colors" data-color-id="1"></div>
+                <div id="color2" class="colors" data-color-id="2"></div>
+                <div id="color3" class="colors" data-color-id="3"></div>
+                <div id="color4" class="colors" data-color-id="4"></div>
+                <div id="color5" class="colors" data-color-id="5"></div>
+            </section>
+        </main>
+
+        <!-- ======================    FOOTER SECTION hex colors ===================-->
+
+        <footer>
+            <div id="hex1" class="hex" data-color-id="1"></div>
+            <div id="hex2" class="hex" data-color-id="2"></div>
+            <div id="hex3" class="hex" data-color-id="3"></div>
+            <div id="hex4" class="hex" data-color-id="4"></div>
+            <div id="hex5" class="hex" data-color-id="5"></div>
+        </footer>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
